@@ -1,0 +1,64 @@
+{
+  "author": "Mustafa Oransel",
+  "contributors": [
+    "Alfred Omega",
+    "Vedran Opacic",
+    "Kelvin Foo",
+    "Dror Gluska"
+  ],
+  "name": "@drorgl/talib",
+  "description": "Technical Analysis Library",
+  "version": "1.0.0",
+  "homepage": "https://github.com/drorgl/node-talib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drorgl/node-talib.git"
+  },
+  "scripts": {
+    "build:cpp": "node-gyp configure build",
+    "build:configure": "node-gyp configure  --verbose",
+    "build": "tsc",
+    "doc": "rimraf ./docs/html && typedoc --tsconfig tsconfig.json",
+    "doc:markdown": "rimraf ./doc/html && typedoc --tsconfig tsconfig.json --plugin typedoc-plugin-markdown --theme markdown && concat-md --toc --decrease-title-levels --dir-name-as-title ./docs/html > ./docs/html/single-page.md",
+    "publish-now": "npm publish --access public",
+    "adx_explain": "ts-node examples/adx_explain.ts",
+    "adx": "ts-node examples/adx.ts",
+    "bbands": "ts-node examples/bbands.ts",
+    "cdlhammer": "ts-node examples/cdlhammer.ts",
+    "functions": "ts-node examples/functions.ts",
+    "sma": "ts-node examples/sma.ts"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=4.1.1"
+  },
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "nan": "^2.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.9",
+    "concat-md": "^0.3.5",
+    "rimraf": "^3.0.2",
+    "source-map-support": "^0.5.19",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "typedoc": "^0.17.7",
+    "typedoc-plugin-external-module-name": "^4.0.0",
+    "typedoc-plugin-markdown": "^2.3.0",
+    "typescript": "3.9.3"
+  },
+  "keywords": [
+    "talib",
+    "stocks",
+    "stock market"
+  ],
+  "licenses": [
+    {
+      "type": "LGPL License",
+      "url": "http://www.gnu.org/licenses/lgpl.html"
+    }
+  ]
+}

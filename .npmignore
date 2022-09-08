@@ -1,0 +1,8 @@
+.DS_Store
+.git*
+build/
+examples/
+node_modules/
+.vscode
+docs
+drorgl-talib-*.tgz
