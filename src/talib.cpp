@@ -1071,4 +1071,4 @@ void Init(Local<Object> exports, Local<Object> module) {
     Set(exports, New<String>("setUnstablePeriod").ToLocalChecked(), GetFunction(New<FunctionTemplate>(SetUnstablePeriod)).ToLocalChecked());
 }
 
-NODE_MODULE(talib, Init)
+NAN_MODULE_WORKER_ENABLED(talib, Init)
