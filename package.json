@@ -26,7 +26,8 @@
     "bbands": "ts-node examples/bbands.ts",
     "cdlhammer": "ts-node examples/cdlhammer.ts",
     "functions": "ts-node examples/functions.ts",
-    "sma": "ts-node examples/sma.ts"
+    "sma": "ts-node examples/sma.ts",
+    "postinstall": "tsc"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
