@@ -17,7 +17,7 @@
   "scripts": {
     "build:cpp": "node-gyp configure build",
     "build:configure": "node-gyp configure  --verbose",
-    "build": "./node_modules/typescript/bin/tsc",
+    "build": "../../../node_modules/typescript/bin/tsc",
     "doc": "rimraf ./docs/html && typedoc --tsconfig tsconfig.json",
     "doc:markdown": "rimraf ./doc/html && typedoc --tsconfig tsconfig.json --plugin typedoc-plugin-markdown --theme markdown && concat-md --toc --decrease-title-levels --dir-name-as-title ./docs/html > ./docs/html/single-page.md",
     "publish-now": "npm publish --access public",
