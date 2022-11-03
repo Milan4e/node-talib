@@ -8,7 +8,7 @@
   ],
   "name": "@milan4e/talib",
   "description": "Technical Analysis Library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/milan4e/node-talib",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "scripts": {
     "build:cpp": "node-gyp configure build",
     "build:configure": "node-gyp configure  --verbose",
-    "build": "../../../node_modules/typescript/bin/tsc",
+    "build": "tsc",
     "doc": "rimraf ./docs/html && typedoc --tsconfig tsconfig.json",
     "doc:markdown": "rimraf ./doc/html && typedoc --tsconfig tsconfig.json --plugin typedoc-plugin-markdown --theme markdown && concat-md --toc --decrease-title-levels --dir-name-as-title ./docs/html > ./docs/html/single-page.md",
     "publish-now": "npm publish --access public",
